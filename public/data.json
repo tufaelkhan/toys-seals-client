@@ -1,0 +1,68 @@
+[
+    {
+        "toyName": "Strem Structure sticks",
+        "seller": "labib",
+        "subCategory": "math",
+        "price": "$877",
+        "rating": "4.8",
+        "quantity": "70",
+        "img": "https://d1jqecz1iy566e.cloudfront.net/large/roy052.jpg",
+        "semail": "pen@gmail.com",
+        "description": "The 100 unique and colorful sticks included in this set can be connected in all kinds of ways to build all kinds of fascinating structures. Simply slide them together and then twist to lock!. Explore the 18 learning cards - each one features an illustration to try and recreate with the sticks - then try building your own amazing creations."
+    },
+    {
+        "toyName": "Drill Boil Rocket",
+        "seller": "santo",
+        "subCategory": "science",
+        "price": "$1187",
+        "rating": "4.9",
+        "quantity": "57",
+        "img": "https://d1jqecz1iy566e.cloudfront.net/large/lr271.jpg",
+        "semail": "pencil@gmail.com",
+        "description": "Snap the bottom, top, and body of the rocket together. Then, use the special power drill to bolt down the top and secure each fin in place. Snap the bottom, top, and body of the rocket together. Then, use the special power drill to bolt down the top and secure each fin in place."
+    },
+    {
+        "toyName": "Physics Workshop",
+        "seller": "sazid",
+        "subCategory": "science",
+        "price": "$577",
+        "rating": "5.00",
+        "quantity": "70",
+        "img": "https://d1jqecz1iy566e.cloudfront.net/large/tk005.jpg",
+        "semail": "khata@gmail.com",
+        "description": "Sure, you've probably heard of a chemistry set. But a physics set? This is something new. Like chemistry, physics is an essential science for everyone to study, and Physics Workshop is the essential introduction to physics."
+    },
+    {
+        "toyName": "Architectural Engineering",
+        "seller": "Polash",
+        "subCategory": "Engineering",
+        "price": "$477",
+        "rating": "4.8",
+        "quantity": "75",
+        "img": "https://d1jqecz1iy566e.cloudfront.net/large/tk171.jpg",
+        "semail": "polash@gmail.com",
+        "description": "Follow along with the full-color, 44-page manual to learn how architectural engineers apply scientific principles to their designs, and how they use those principles to push their buildings to the limits, all while building 20 amazing models."
+    },
+    {
+        "toyName": "Mechanics Lab-Theme Park",
+        "seller": "sujoy",
+        "subCategory": "Engineering",
+        "price": "$277",
+        "rating": "4.7",
+        "quantity": "40",
+        "img": "https://d1jqecz1iy566e.cloudfront.net/large/ctc032.jpg",
+        "semail": "sujoy@gmail.com",
+        "description": "The 100 unique and colorful sticks included in this set can be connected in all kinds of ways to build all kinds of fascinating structures. Simply slide them together and then twist to lock!. Explore the 18 learning cards - each one features an illustration to try and recreate with the sticks - then try building your own amazing creations."
+    },
+    {
+        "toyName": "Tumble Trax",
+        "seller": "sakib",
+        "subCategory": "science",
+        "price": "$267",
+        "rating": "4.6",
+        "quantity": "40",
+        "img": "https://d1jqecz1iy566e.cloudfront.net/large/lr168.jpg",
+        "semail": "sakib@gmail.com",
+        "description": "Can you make the marble speed up, slow down, launch through the air, stop, or change directions? - With these tracks and your imagination, the possibilities are endless!"
+    }
+]
