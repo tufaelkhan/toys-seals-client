@@ -5,6 +5,8 @@ const Header = () => {
   <li><Link to='/'>Home</Link></li>
   <li><Link to='/blog'>Blog</Link></li>
   <li><Link to='/alltoys'>All Toys</Link></li>
+  <li><Link to='/mytoys'>My Toys</Link></li>
+  <li><Link to='/addtoys'>Add Toys</Link></li>
   </>
     return (
         <div className="navbar bg-base-100">
