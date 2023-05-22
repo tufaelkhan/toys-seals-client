@@ -7,7 +7,7 @@ const Header = () => {
   const {user, logOut} = useContext(AuthContext)
 
   const handleLogOut =() =>{
-    logOut()
+       logOut()
     .then(() =>{})
     .then(error =>{
       console.log(error);
@@ -19,7 +19,7 @@ const Header = () => {
   <li><Link to='/blog'>Blog</Link></li>
   <li><Link to='/toys'>All Toys</Link></li>
 {user?.email?  <>
-  <li><Link to='/mytoys'>My Toys</Link></li>
+  <li><Link to='/toysbyuser'>My Toys</Link></li>
   <li><Link to='/addtoys'>Add Toys</Link></li>
   <li><button className=""> Profile<FaUserCircle className=""></FaUserCircle> </button></li>
   <li><button onClick={handleLogOut} className="btn btn-success">SignOut</button></li>
