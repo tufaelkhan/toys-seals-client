@@ -1,4 +1,4 @@
-
+import Swal from 'sweetalert2'
 const AddToys = () => {
     const handleAddToys = (event)=>{
         event.preventDefault()
@@ -16,6 +16,28 @@ const AddToys = () => {
 
         const newToys = {name, seller, email, category, price, rating, quantity, photo, detail}
         console.log(newToys);
+
+        //data send in server
+        fetch('http://localhost:5000/toys',{
+         method: 'POST',
+         headers: {
+          'content-type': 'application/json'
+         },
+         body: JSON.stringify(newToys)
+        })
+        .then(res => res.json())
+        .then(data => {
+          console.log(data);
+          if(data.insertedId){
+            Swal.fire({
+              title: 'success!',
+              text: 'toys added successfully',
+              icon: 'success',
+              confirmButtonText: 'Cool'
+            })
+          }
+        })
+
 
     }
     return (

@@ -1,12 +1,32 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../../Providers/AuthProvider";
+import { FaCircle, FaUserCircle } from "react-icons/fa";
 
 const Header = () => {
+  const {user, logOut} = useContext(AuthContext)
+
+  const handleLogOut =() =>{
+    logOut()
+    .then(() =>{})
+    .then(error =>{
+      console.log(error);
+    })
+  }
+
   const navItems = <>
   <li><Link to='/'>Home</Link></li>
   <li><Link to='/blog'>Blog</Link></li>
-  <li><Link to='/alltoys'>All Toys</Link></li>
+  <li><Link to='/toys'>All Toys</Link></li>
+{user?.email?  <>
   <li><Link to='/mytoys'>My Toys</Link></li>
   <li><Link to='/addtoys'>Add Toys</Link></li>
+  <li><button className=""> Profile<FaUserCircle className=""></FaUserCircle> </button></li>
+  <li><button onClick={handleLogOut} className="btn btn-success">SignOut</button></li>
+
+</> :
+  <li><Link to='/login'>Login</Link></li>
+  }
   </>
     return (
         <div className="navbar bg-base-100">

@@ -1,9 +1,10 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 
 const SignUp = () => {
     const { createUser } = useContext(AuthContext)
+    const [Error, setError] = useState('')
 
     const handleSignUp = (event) => {
         event.preventDefault();
@@ -14,6 +15,13 @@ const SignUp = () => {
         const password = form.password.value
 
         console.log(name, email, password, photo);
+        if(/^[A-Za-z]$/.test(password)){
+            setError('please add at last one uppercase')
+            return ;
+        }else if(password.length < 8){
+          setError('password must be 8 chracter')
+          return ;
+        }
         createUser(email, password)
         .then(result =>{
             const user = result.user;
@@ -50,6 +58,7 @@ const SignUp = () => {
                         </label>
                         <input type="password" name="password" placeholder="password" className="input input-bordered"/>
                     </div>
+                    <h3 className="text-red-600">{Error}</h3>
                     <div className="form-control mt-6">
                         <input type="submit" className="btn btn-primary" value="signup" />
                     </div>
