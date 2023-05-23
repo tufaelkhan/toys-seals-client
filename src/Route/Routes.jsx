@@ -6,11 +6,12 @@ import SignUp from "../Pages/Home/SignUp";
 import ShopDetails from "../Pages/Home/Home/ShopDetails";
 import AllToys from "../Pages/Home/AllToys";
 import ToyDetails from "../Pages/Home/ToyDetails";
-import UpdateMyToy from "../Pages/UpdateMyToy";
 import Blog from "../Pages/AllPages/Blog";
 import AddToys from "../Pages/AllPages/AddToys";
 import ErrorPage from "../Pages/AllPages/ErrorPage";
 import MyToys from "../Pages/AllPages/MyToys";
+import PrivateRouter from "../Pages/PrivateRouter";
+import UpdateMyToy from "../Pages/AllPages/UpdateMyToy";
 
 const router = createBrowserRouter([
     {
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
         },
         {
           path: '/toys/:id',
-          element: <ToyDetails></ToyDetails>,
+          element: <PrivateRouter><ToyDetails></ToyDetails></PrivateRouter>,
           loader: ({params}) => fetch(`https://toy-seller.vercel.app/toys/${params.id}`)
         },
         {
@@ -59,7 +60,7 @@ const router = createBrowserRouter([
         },
       {
         path: '/shop/:id',
-        element: <ShopDetails></ShopDetails>,
+        element: <PrivateRouter><ShopDetails></ShopDetails></PrivateRouter>,
         loader: ({params})=> fetch(`https://toy-seller.vercel.app/shop/${params.id}`)
       }
       ]
