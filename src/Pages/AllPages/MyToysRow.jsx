@@ -50,7 +50,7 @@ const MyToysRow = ({ mytoy }) => {
             </td>
             <td>
                 <div>
-                    <Link to={`http://localhost:5173/toysbyuser/${_id}`}><button className="btn btn-success">Update</button></Link>
+                    <Link to={`https://toy-seller.vercel.app/toysbyuser/${_id}`}><button className="btn btn-success">Update</button></Link>
                 </div>
             </td>
             <th>
