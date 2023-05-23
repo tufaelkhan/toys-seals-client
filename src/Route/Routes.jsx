@@ -4,13 +4,13 @@ import Home from "../Pages/Home/Home/Home";
 import Login from "../Pages/Home/Login";
 import SignUp from "../Pages/Home/SignUp";
 import ShopDetails from "../Pages/Home/Home/ShopDetails";
-import Blog from "../Pages/Blog";
 import AllToys from "../Pages/Home/AllToys";
-import AddToys from "../Pages/AddToys";
-import MyToys from "../Pages/MyToys";
 import ToyDetails from "../Pages/Home/ToyDetails";
 import UpdateMyToy from "../Pages/UpdateMyToy";
-import ErrorPage from "../Pages/ErrorPage";
+import Blog from "../Pages/AllPages/Blog";
+import AddToys from "../Pages/AllPages/AddToys";
+import ErrorPage from "../Pages/AllPages/ErrorPage";
+import MyToys from "../Pages/AllPages/MyToys";
 
 const router = createBrowserRouter([
     {
@@ -42,7 +42,7 @@ const router = createBrowserRouter([
         },
         {
           path: '/toysbyuser',
-          element: <MyToys></MyToys>,
+          element: <MyToys></MyToys>
         },
         {
           path: '/toysbyuser/:id',
