@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const MyToysRow = ({ mytoy }) => {
-    const { _id, name, seller, price, quantity, detail } = mytoy
+    const { _id, name, seller, price, quantity} = mytoy
 
     const handleDelete = (_id) => {
         // console.log(_id)

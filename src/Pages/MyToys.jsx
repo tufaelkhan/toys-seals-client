@@ -5,6 +5,7 @@ import MyToysRow from "./MyToysRow";
 const MyToys = () => {
     const {user} = useContext(AuthContext)
     const [mytoys, setMyToys] = useState([])
+    const [searchtext, setSearchText] = useState('')
 
     const url = `http://localhost:5000/toysbyuser?email=${user?.email}`
 
@@ -16,6 +17,11 @@ const MyToys = () => {
     return (
         <div>
         <h3>My toys is here:</h3>
+        <div className="justify-center ml-20 mb-6 mt-6">
+        <input onChange={(e) => setSearchText(e.target.value)}
+        type="text" placeholder="Type here" className="input w-full max-w-xs" />
+        <button >Search</button>
+        </div>
         <div className="overflow-x-auto w-full">
           <table className="table w-full">
             {/* head */}
