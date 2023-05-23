@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../../Providers/AuthProvider";
-import { FaCircle, FaUserCircle } from "react-icons/fa";
+import { FaUserCircle } from "react-icons/fa";
 
 const Header = () => {
   const {user, logOut} = useContext(AuthContext)
@@ -39,9 +39,9 @@ const Header = () => {
       {navItems}
       </ul>
     </div>
-    <div>
-      <img src="https://images-platform.99static.com/OHcO3S0wICgFNpqJ6c5-DdLpIyY=/0x0:960x960/500x500/top/smart/99designs-contests-attachments/87/87373/attachment_87373152" className="ml-12" width='80' alt="" />
-    <Link to='/' className="btn btn-ghost normal-case text-xl">ToYs HuB</Link>
+    <div className="flex items-center">
+      <img src="https://designcontest.nyc3.digitaloceanspaces.com/data/contests/95925/entries/82b0c72379298b2c.jpg" className="ml-12" width='80' alt="" />
+    <Link to='/' className="btn btn-ghost normal-case text-xl">Toys Hub</Link>
     </div>
   </div>
   <div className="navbar-center hidden lg:flex">
@@ -50,7 +50,7 @@ const Header = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <button className="btn btn-outline btn-success">Let`s Start</button>
+    <button className="btn btn-success">Let`s Start</button>
   </div>
 </div>
     );

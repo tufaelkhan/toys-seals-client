@@ -4,9 +4,9 @@ import { FaFacebook, FaInstagramSquare, FaMailBulk, FaMapMarkedAlt, FaPhoneAlt, 
 const Footer = () => {
     return (
         <footer className="footer p-10 bg-base-200 text-base-content">
-         <div>
-      <img src="https://images-platform.99static.com/OHcO3S0wICgFNpqJ6c5-DdLpIyY=/0x0:960x960/500x500/top/smart/99designs-contests-attachments/87/87373/attachment_87373152" className="ml-12" width='80' alt="" />
-    <Link to='/' className="btn btn-ghost normal-case text-xl">ToYs HuB</Link>
+         <div className="justify-center">
+      <img src="https://designcontest.nyc3.digitaloceanspaces.com/data/contests/95925/entries/82b0c72379298b2c.jpg" className="ml-6" width='80' alt="" />
+    <Link to='/' className="btn btn-ghost normal-case text-xl">Toys Hub</Link>
     </div>
     <div>
           <span className="footer-title">Contact Us</span> 

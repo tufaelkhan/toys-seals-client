@@ -28,10 +28,7 @@ const Blog = () => {
           </div>
           <div>
           <h3>What is MongoDB aggregate and how does it work ?</h3>
-            <p> </p>
-            <p>
-               Next.js: Next.js is a type-script based framework. it building scalable and efficient server-side applications. it leverages concepts from both object-oriented programming and funtional programming design complex web application.
-            </p>
+            <p>In MongoDB. the aggregate method used to advanced data processing and analysis operations on the documents within a collection. the aggregate method takes an array of stages as its parameter. Each stage represents a specific operation or transformation that is applied to the documents in the collection. aggregate work on matching stage, transformation stage. </p>
           </div>
         </div>
     );
