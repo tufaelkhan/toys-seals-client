@@ -29,12 +29,12 @@ const router = createBrowserRouter([
         {
           path: '/toys',
           element: <AllToys></AllToys>,
-          loader: () => fetch('http://localhost:5000/toys')
+          loader: () => fetch('https://toy-seller.vercel.app/toys')
         },
         {
           path: '/toys/:id',
           element: <ToyDetails></ToyDetails>,
-          loader: ({params}) => fetch(`http://localhost:5000/toys/${params.id}`)
+          loader: ({params}) => fetch(`https://toy-seller.vercel.app/toys/${params.id}`)
         },
         {
           path: '/addtoys',
@@ -47,7 +47,7 @@ const router = createBrowserRouter([
         {
           path: '/toysbyuser/:id',
           element: <UpdateMyToy></UpdateMyToy>,
-          loader: ({params}) => fetch(`http://localhost:5000/toysbyuser/${params.id}`)
+          loader: ({params}) => fetch(`https://toy-seller.vercel.app/toysbyuser/${params.id}`)
         },
         {
           path: '/login',
@@ -60,7 +60,7 @@ const router = createBrowserRouter([
       {
         path: '/shop/:id',
         element: <ShopDetails></ShopDetails>,
-        loader: ({params})=> fetch(`http://localhost:5000/shop/${params.id}`)
+        loader: ({params})=> fetch(`https://toy-seller.vercel.app/shop/${params.id}`)
       }
       ]
     },
