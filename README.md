@@ -20,4 +20,4 @@
 #6. react router dom.
 #7. react rating.
 
-#live Site Link: hosting firebase [https://bangladeshi-special-recipe.web.app]
+#live Site Link: hosting firebase [https://happy-education.web.app]
